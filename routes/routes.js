@@ -1,4 +1,5 @@
 var appRouter = function (app) {
+   // Assessment 1
     app.post("/api/firstfactorial/", function(req, res) {
       var num = req.body.input;
       var aws = [];
@@ -9,6 +10,7 @@ var appRouter = function (app) {
       aws.push({"output":fac})
       res.status(200).send(aws);
     });
+   // Assessment 2
     app.post("/api/ristreverse/", function(req,res){
       var word = req.body.input;
       var aws = [];
@@ -19,6 +21,7 @@ var appRouter = function (app) {
       aws.push({"output":o})
       res.status(200).send(aws);
     })
+    // Assessment 3
     app.post("/api/alphabetsoup/", function(req,res){
         var word = req.body.input;
         var aws = [];
@@ -27,6 +30,7 @@ var appRouter = function (app) {
         aws.push({"output":sortWord})
         res.status(200).send(aws);
       })
+    // Assessment 4
     app.post("/api/palindrome/", function(req,res){
         var word = req.body.input;
         var aws = [];
